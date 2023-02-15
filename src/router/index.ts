@@ -1,6 +1,6 @@
 import {createWebHistory,createRouter} from "vue-router";
-import Home from "../views/Home.vue";
-import Login from "../views/Login.vue";
+import Home from "@/views/Home.vue";
+import Login from "@/views/Login.vue";
 
 // 2.定义一些路由
 // 每个路由都需要映射到一个组件
