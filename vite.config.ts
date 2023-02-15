@@ -5,9 +5,11 @@ import {NaiveUiResolver} from 'unplugin-vue-components/resolvers'
 import {resolve}from 'path'
 
 function pathResolve(dir:string){
-
+    // 获取绝对路径的方法
     return resolve(process.cwd(),'.',dir)
 }
+
+console.log(pathResolve('src'))
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -25,5 +27,9 @@ export default defineConfig({
                 replacement:(pathResolve('src'))
             }
         ]
+    },
+    server:{
+        host:'localhost',
+        port:8000
     }
 })
